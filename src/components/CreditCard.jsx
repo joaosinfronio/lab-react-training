@@ -1,7 +1,7 @@
 import visaImage from './../assets/images/visa.png';
 
 const CreditCard = (props) => {
-  const mask = '**** **** ****' + props.number.substring(12);
+  const mask = '•••• •••• ••••' + props.number.substring(12);
   let icon = props.type === 'Visa' ? visaImage : visaImage;
   const divStyle = {
     color: props.color,
@@ -11,8 +11,10 @@ const CreditCard = (props) => {
     display: 'inline-block',
     flexDirection: 'column',
     width: '400px',
+    height: '230px',
     borderRadius: '15px',
     margin: '15px',
+    marginBotton: '0px',
   };
 
   return (
@@ -26,19 +28,20 @@ const CreditCard = (props) => {
         }}
       >
         <img
-          style={{ width: '100px', margin: '15px' }}
+          style={{ width: '60px', margin: '15px' }}
           src={icon}
           alt={props.type}
         />
       </div>
       <div>
-        <h2> {mask}</h2>
+        <h2 style={{ fontSize: '40px', marginBottom: '0' }}> {mask}</h2>
       </div>
       <div
         style={{
           display: 'flex',
           alignItems: 'center',
           marginLeft: '15px',
+          marginBottom: '0',
         }}
       >
         <p>
