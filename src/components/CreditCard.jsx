@@ -1,7 +1,7 @@
 import visaImage from './../assets/images/visa.png';
 
 const CreditCard = (props) => {
-  const mask = '•••• •••• ••••' + props.number.substring(12);
+  const mask = '•••• •••• ••••' + props.number.slice(-4);
   let icon = props.type === 'Visa' ? visaImage : visaImage;
   const divStyle = {
     color: props.color,
