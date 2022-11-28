@@ -14,7 +14,6 @@ const Dice = () => {
 
   const handleClick = () => {
     setPicture(empty);
-    console.log(picture);
 
     setTimeout(() => setPicture(options[Math.round(Math.random() * 5)]), 1000);
   };

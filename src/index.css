@@ -53,3 +53,19 @@ p {
 img {
   max-width: 200px;
 }
+
+.Numbers {
+  display: flex;
+  flex-direction: row;
+}
+
+.Numbers li {
+  list-style-type: none;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #000;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
